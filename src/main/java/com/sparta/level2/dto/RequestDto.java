@@ -6,7 +6,7 @@ import lombok.Getter;
 public class RequestDto {
     private Long id;
     private String title;
-    private String author;
+    private String username;
     private String password;
     private String content;
 }
