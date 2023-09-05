@@ -8,6 +8,7 @@
 ![LEVEL2_ERD](https://github.com/Gimwooeung/Spring_LEVEL2/assets/132888708/296cb5e4-93a8-40e2-87b5-5b25f6258766)
 
 # API 명세서
+<img width="589" alt="스크린샷 2023-09-05 133918" src="https://github.com/Gimwooeung/Spring_LEVEL2/assets/141476699/ca414d69-1df6-42e5-950b-7ddc0b2569b5">
 
 # Why: 과제 제출시에는 아래 질문을 고민해보고 답변을 함께 제출해주세요.
 1. 처음 설계한 API 명세서에 변경사항이 있었나요? 
