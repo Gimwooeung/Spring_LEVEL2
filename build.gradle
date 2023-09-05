@@ -21,19 +21,13 @@ repositories {
     mavenCentral()
 }
 
-tasks.withType(JavaCompile){
-    options.encoding = "UTF-8"
-}
-
 dependencies {
-    // validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     // JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     // MySQL
     runtimeOnly 'com.mysql:mysql-connector-j'
-    // Security
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+
     // JWT
     compileOnly group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.5'
     runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.5'
@@ -44,8 +38,10 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
 
+}
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+

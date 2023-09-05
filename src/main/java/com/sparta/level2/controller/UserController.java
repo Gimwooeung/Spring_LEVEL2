@@ -1,38 +1,33 @@
 package com.sparta.level2.controller;
 
-import com.sparta.level2.dto.LoginRequestDto;
-import com.sparta.level2.dto.LoginResponseDto;
-import com.sparta.level2.dto.SignupRequestDto;
-import com.sparta.level2.dto.SignupResponseDto;
-import com.sparta.level2.service.UserService;
+
+import com.sparta.levelone.dto.LoginRequestDto;
+import com.sparta.levelone.dto.LoginResponseDto;
+import com.sparta.levelone.dto.SignupRequestDto;
+import com.sparta.levelone.dto.SignupResponseDto;
+import com.sparta.levelone.service.UserService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
 
-@Slf4j
 @RestController
-@RequestMapping("/api/user")
+@RequiredArgsConstructor
+@RequestMapping("/api/auth")
 public class UserController {
-
     private final UserService userService;
 
-    public UserController(UserService userService) {
-        this.userService = userService;
+    // 회원가입
+    @PostMapping("/signup")
+    public SignupResponseDto signup(@RequestBody @Valid SignupRequestDto signupRequestDto) {
+        userService.signup(signupRequestDto);
+        return new SignupResponseDto("회원가입 성공", 200);
     }
-
-    @PostMapping("/signup") // 회원가입
-    public SignupResponseDto signup(@RequestBody @Valid SignupRequestDto requestDto) {
-        userService.signup(requestDto);
-        return new SignupResponseDto("회원가입성공", 200);
-    }
-
-    @PostMapping("/login") // 로그인
-    public LoginResponseDto login(@RequestBody LoginRequestDto requestDto, HttpServletResponse res) {
-        userService.login(requestDto, res);
-        return new LoginResponseDto("로그인성공", 200);
+    // 로그인
+    @ResponseBody
+    @PostMapping("/login")
+    public LoginResponseDto login(@RequestBody @Valid LoginRequestDto loginRequestDto, HttpServletResponse response) {
+        userService.login(loginRequestDto, response);
+        return new LoginResponseDto("로그인 성공", 200);
     }
 }

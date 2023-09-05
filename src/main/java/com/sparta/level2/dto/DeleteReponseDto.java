@@ -1,15 +1,13 @@
 package com.sparta.level2.dto;
 
 import lombok.Getter;
-import lombok.Setter;
 
-@Setter
 @Getter
-public class SignupResponseDto {
+public class DeleteReponseDto {
     private String msg;
     private int statusCode;
 
-    public SignupResponseDto(String msg, int statusCode){
+    public DeleteReponseDto(String msg, int statusCode){
         this.msg = msg;
         this.statusCode = statusCode;
     }
