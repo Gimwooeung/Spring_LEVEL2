@@ -1,12 +1,11 @@
 package com.sparta.level2.service;
 
-
-import com.sparta.levelone.dto.LoginRequestDto;
-import com.sparta.levelone.dto.SignupRequestDto;
-import com.sparta.levelone.entity.User;
-import com.sparta.levelone.entity.UserRoleEnum;
-import com.sparta.levelone.jwt.JwtUtil;
-import com.sparta.levelone.repository.UserRepository;
+import com.sparta.level2.dto.LoginRequestDto;
+import com.sparta.level2.dto.SignupRequestDto;
+import com.sparta.level2.entity.User;
+import com.sparta.level2.entity.UserRoleEnum;
+import com.sparta.level2.jwt.JwtUtil;
+import com.sparta.level2.repository.UserRepository;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

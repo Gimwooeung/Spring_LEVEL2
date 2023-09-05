@@ -1,6 +1,5 @@
 package com.sparta.level2.jwt;
 
-
 import com.sparta.level2.entity.UserRoleEnum;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

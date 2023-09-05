@@ -1,14 +1,13 @@
 package com.sparta.level2.service;///
 
-
-import com.sparta.levelone.dto.DeleteReponseDto;
-import com.sparta.levelone.dto.PostRequestDto;
-import com.sparta.levelone.dto.PostResponseDto;
-import com.sparta.levelone.entity.Post;
-import com.sparta.levelone.entity.User;
-import com.sparta.levelone.jwt.JwtUtil;
-import com.sparta.levelone.repository.PostRepository;
-import com.sparta.levelone.repository.UserRepository;
+import com.sparta.level2.dto.DeleteReponseDto;
+import com.sparta.level2.dto.PostRequestDto;
+import com.sparta.level2.dto.PostResponseDto;
+import com.sparta.level2.entity.Post;
+import com.sparta.level2.entity.User;
+import com.sparta.level2.jwt.JwtUtil;
+import com.sparta.level2.repository.PostRepository;
+import com.sparta.level2.repository.UserRepository;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.transaction.Transactional;

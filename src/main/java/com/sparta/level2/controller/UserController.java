@@ -1,11 +1,12 @@
 package com.sparta.level2.controller;
 
 
-import com.sparta.levelone.dto.LoginRequestDto;
-import com.sparta.levelone.dto.LoginResponseDto;
-import com.sparta.levelone.dto.SignupRequestDto;
-import com.sparta.levelone.dto.SignupResponseDto;
-import com.sparta.levelone.service.UserService;
+
+import com.sparta.level2.dto.LoginRequestDto;
+import com.sparta.level2.dto.LoginResponseDto;
+import com.sparta.level2.dto.SignupRequestDto;
+import com.sparta.level2.dto.SignupResponseDto;
+import com.sparta.level2.service.UserService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

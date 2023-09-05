@@ -1,7 +1,7 @@
 package com.sparta.level2.dto;///
 
 
-import com.sparta.levelone.entity.Post;
+import com.sparta.level2.entity.Post;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

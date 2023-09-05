@@ -1,9 +1,10 @@
 package com.sparta.level2.controller;
 
-import com.sparta.levelone.dto.DeleteReponseDto;
-import com.sparta.levelone.dto.PostRequestDto;
-import com.sparta.levelone.dto.PostResponseDto;
-import com.sparta.levelone.service.PostService;
+
+import com.sparta.level2.dto.DeleteReponseDto;
+import com.sparta.level2.dto.PostRequestDto;
+import com.sparta.level2.dto.PostResponseDto;
+import com.sparta.level2.service.PostService;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

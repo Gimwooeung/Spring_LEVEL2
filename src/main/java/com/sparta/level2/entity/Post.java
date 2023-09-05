@@ -1,6 +1,6 @@
 package com.sparta.level2.entity;
 
-import com.sparta.levelone.dto.PostRequestDto;
+import com.sparta.level2.dto.PostRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
